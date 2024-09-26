@@ -4,7 +4,9 @@
 }
 header {
   width: 100%;
-  height: 100vh;
+  height: 10vh;
+  position: sticky;
+  top: 0;
 }
 
 #Company_info1 {
@@ -44,5 +46,5 @@ header {
 
 footer {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 }
