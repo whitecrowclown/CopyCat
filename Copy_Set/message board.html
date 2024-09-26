@@ -61,9 +61,39 @@
         display: flex;
         align-items: center; /* 수직 정렬 */
         margin-top: 2vh; /* 위쪽 여백 조정 */
+        padding: 1vh; /* 내부 여백 추가 */
+        /* 배경색 제거 */
       }
+
       .privacy-container input {
-        margin-right: 0.5vw; /* 체크박스와 텍스트 간격 조정 */
+        margin-right: 1vw; /* 체크박스와 텍스트 간격 조정 */
+        transform: scale(1.2); /* 체크박스 크기 조정 */
+      }
+
+      .privacy-container label {
+        font-size: 1.2rem; /* 글자 크기 증가 */
+        color: orange; /* 오렌지 색상으로 변경 */
+        text-align: left; /* 왼쪽 정렬 */
+      }
+
+      #privacy_ck {
+        width: 1vw;
+      }
+
+      #store-name {
+        width: 30vw;
+      }
+
+      #store-location {
+        width: 30vw;
+      }
+
+      #contact {
+        width: 30vw;
+      }
+
+      #email {
+        width: 30vw;
       }
     </style>
   </head>
@@ -75,7 +105,6 @@
 
     <main>
       <section style="width: 80vw">
-        <h2>문의하기</h2>
         <form action="submit_inquiry.php" method="post">
           <div class="flex-container">
             <div>
@@ -136,12 +165,15 @@
                   placeholder="이메일 주소 입력"
                   required
                 />
+                <div>@</div>
                 <select id="email-provider" name="email-provider" required>
                   <option value="">선택</option>
                   <option value="naver.com">naver.com</option>
                   <option value="gmail.com">gmail.com</option>
                   <option value="daum.net">daum.net</option>
                   <option value="기타">기타</option>
+                  <option value="직접 입력">직접 입력</option>
+                  <!-- 직접 입력 선택지 추가 -->
                 </select>
               </div>
             </div>
@@ -176,11 +208,13 @@
           ></textarea>
 
           <div class="privacy-container">
-            <input type="checkbox" name="privacy" required />
-            <label>개인정보처리방침에 동의합니다</label>
+            <input type="checkbox" id="privacy_ck" name="privacy" required />
+            <label for="privacy">개인정보처리방침에 동의합니다</label>
           </div>
 
-          <button type="submit" style="width: 80vw">문의하기</button>
+          <button type="submit" style="width: 80vw; background-color: orange">
+            문의하기
+          </button>
         </form>
       </section>
     </main>
