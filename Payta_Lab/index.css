@@ -12,7 +12,7 @@ header {
   width: 98vw;
   height: 10vh;
   display: flex;
-  margin-top: 2vh;
+  align-items: center;
 }
 
 header #logo {
@@ -24,10 +24,27 @@ header #logo {
 header #menu {
   width: 80%;
   text-align: center;
+  font-weight: bold;
+}
+
+header #menu #home {
+  margin-right: 3%;
+}
+
+header #menu #services {
+  margin-right: 3%;
+}
+
+header #menu #review {
+  margin-right: 3%;
+}
+
+header #menu #faq {
+  margin-right: 3%;
 }
 
 header #download {
-  width: 10%;
+  width: 8%;
   text-align: right;
 }
 #Company_info1 {
