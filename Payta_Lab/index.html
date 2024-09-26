@@ -27,19 +27,157 @@
   </header>
 
   <body>
-    <div id="Company_info1" style="background-color: red">a</div>
+    <div id="Company_info1">
+      <div id="CT1_Wrapper">
+        <div id="CI1_Title">간편하고 스마트한 주문</div>
+        <div id="CI1_Contents">PASSORDER</div>
+        <button id="CI1_btn">도입비용 0원 무료 상담하기</button>
+      </div>
+    </div>
 
-    <div id="Company_info2" style="background-color: orange">b</div>
+    <div id="Company_info2" style="background-color: red">
+      카페 주문 플랫폼 패스오더는 카페와 고객을 연결하는 가장 효과적인 홍보
+      채널입니다 카페 주문 플랫폼 매출을 늘리고 싶은 점주님들의 가장 큰 고민,
+      “잠재고객에게 우리 매장을 어떻게 알리지?”
+    </div>
 
-    <div id="Company_info3" style="background-color: yellow">c</div>
+    <div id="Company_info3" style="background-color: orange">c</div>
 
-    <div id="Company_info4" style="background-color: green">d</div>
+    <div id="Company_info4" style="background-color: yellow">d</div>
 
-    <div id="Company_info5" style="background-color: blue">e</div>
+    <div id="Company_info5" style="background-color: green">e</div>
 
-    <div id="Company_info6" style="background-color: midnightblue">f</div>
+    <div id="Company_info6" style="background-color: blue">f</div>
 
-    <div id="Company_info7" style="background-color: purple">g</div>
+    <div id="Company_info6" style="background-color: midnightblue">g</div>
+
+    <div id="Company_info6" style="background-color: purple">h</div>
+
+    <div id="Company_info7">
+      <div id="contact_form">
+        <header>
+          Do You Need Help
+          <h1>
+            궁금한 사항은 언제든<br />
+            문의주세요
+          </h1>
+        </header>
+
+        <section style="width: 80vw">
+          <form action="submit_inquiry.php" method="post">
+            <div class="flex-container">
+              <div>
+                <label for="store-name">매장이름 *</label>
+                <input
+                  type="text"
+                  id="store-name"
+                  name="store-name"
+                  placeholder="패스커피 강남점"
+                  required
+                />
+              </div>
+              <div>
+                <label for="store-location">매장위치 *</label>
+                <input
+                  type="text"
+                  id="store-location"
+                  name="store-location"
+                  placeholder="서울특별시 강남구 영동대로 85길, 패스커피"
+                  required
+                />
+              </div>
+            </div>
+
+            <label for="business-type">업종 *</label>
+            <select id="business-type" name="business-type" required>
+              <option value="">선택</option>
+              <option value="커피전문점(개인)">커피전문점(개인)</option>
+              <option value="커피전문점(프랜차이즈)">
+                커피전문점(프랜차이즈)
+              </option>
+              <option value="프랜차이즈 본사">프랜차이즈 본사</option>
+              <option value="일반음식점">일반음식점</option>
+              <option value="제과/제빵">제과/제빵</option>
+              <option value="아이스크림/디저트">아이스크림/디저트</option>
+              <option value="패스트푸드점">패스트푸드점</option>
+              <option value="기타">기타</option>
+            </select>
+
+            <div class="flex-container">
+              <div>
+                <label for="contact">연락처 *</label>
+                <input
+                  type="tel"
+                  id="contact"
+                  name="contact"
+                  placeholder="연락처를 입력해주세요"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">이메일 *</label>
+                <div class="email-container">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="이메일 주소 입력"
+                    required
+                  />
+                  <div>@</div>
+                  <select id="email-provider" name="email-provider" required>
+                    <option value="">선택</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="기타">기타</option>
+                    <option value="직접 입력">직접 입력</option>
+                    <!-- 직접 입력 선택지 추가 -->
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <label for="referral">패스오더를 처음 알게된 경로 *</label>
+            <select id="referral" name="referral" required>
+              <option value="">선택</option>
+              <option value="다른 매장 홍보물">다른 매장 홍보물</option>
+              <option value="네이버 리뷰">네이버 리뷰</option>
+              <option value="지인 또는 손님 추천">지인 또는 손님 추천</option>
+              <option value="전화주문">전화주문</option>
+              <option value="SNS 광고 (페이스북, 인스타)">
+                SNS 광고 (페이스북, 인스타)
+              </option>
+              <option value="카페사장님 추천">카페사장님 추천</option>
+              <option value="네이버 카페">네이버 카페</option>
+              <option value="블로그">블로그</option>
+              <option value="영업(팜플렛, 명함, 영업사원)">
+                영업(팜플렛, 명함, 영업사원)
+              </option>
+              <option value="기타">기타</option>
+            </select>
+
+            <label for="message">문의내용 *</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="15"
+              placeholder="문의 내용을 입력해주세요"
+              required
+            ></textarea>
+
+            <div class="privacy-container">
+              <input type="checkbox" id="privacy_ck" name="privacy" required />
+              <label for="privacy">개인정보처리방침에 동의합니다</label>
+            </div>
+
+            <button type="submit" style="width: 80vw; background-color: orange">
+              문의하기
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
   <footer style="background-color: white">
     <img
