@@ -2,6 +2,12 @@
   margin: 0%;
   gap: 0%;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 header {
   width: 98vw;
   height: 10vh;
@@ -10,58 +16,68 @@ header {
 }
 
 header #logo {
-  width: 10vw;
+  width: 10%;
   text-align: left;
   margin-left: 1vw;
 }
 
 header #menu {
-  width: 80vw;
+  width: 80%;
   text-align: center;
 }
 
 header #download {
-  width: 10vw;
+  width: 10%;
   text-align: right;
 }
 #Company_info1 {
-  width: 98vw;
+  width: 100%;
   height: 100vh;
 }
 
 #Company_info2 {
-  width: 98vw;
+  width: 100%;
   height: 100vh;
 }
 
 #Company_info3 {
-  width: 98vw;
+  width: 100%;
   height: 100vh;
 }
 
 #Company_info4 {
-  width: 98vw;
+  width: 100%;
   height: 100vh;
 }
 
 #Company_info5 {
-  width: 98vw;
+  width: 100%;
   height: 100vh;
 }
 
 #Company_info6 {
-  width: 98vw;
+  width: 100%;
   height: 100vh;
 }
 
 #Company_info7 {
-  width: 98vw;
+  width: 100%;
   height: 70vh;
 }
 
 footer {
-  width: 98vw;
+  width: 90%;
   height: 30vh;
   font-size: 1.5vh;
-  margin-left: 10vw;
+  margin-left: 10%;
+}
+
+footer #footer_logo {
+  margin-bottom: 1%;
+}
+
+footer #privacy-policy-container {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: gray;
 }
