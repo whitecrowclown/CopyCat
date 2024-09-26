@@ -180,6 +180,42 @@ header #menu_wrapper {
   height: 80vh;
   padding-left: 20%;
   padding-top: 20%;
+  background-color: gray;
+}
+
+#index_CI4_Title1 {
+  font-size: 1.5vw;
+  padding-left: 1%;
+}
+
+#index_CI4_Title2 {
+  font-size: 3vw;
+  padding-top: 1.15%;
+  font-weight: bold;
+}
+
+#index_CI4_Title3 {
+  font-size: 1.12vw;
+  padding-top: 3%;
+}
+
+#index_CI4_Title4 {
+  font-size: 1.12vw;
+  padding-top: 2.1%;
+  font-weight: bold;
+}
+
+#index_CI4 button {
+  margin-top: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3.9%;
+  padding-right: 3.9%;
+  border-radius: 50px;
+  font-weight: bolder;
+  font-size: 80%;
+  border: 0;
+  background-color: lightgray;
 }
 
 #Company_info5 {
