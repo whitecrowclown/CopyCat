@@ -1,0 +1,48 @@
+* {
+  margin: 0%;
+  gap: 0%;
+}
+header {
+  width: 100vw;
+  height: 10vh;
+}
+
+#Company_info1 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#Company_info2 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#Company_info3 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#Company_info4 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#Company_info5 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#Company_info6 {
+  width: 100vw;
+  height: 100vh;
+}
+
+#Company_info7 {
+  width: 100vw;
+  height: 70vh;
+}
+
+footer {
+  width: 100vw;
+  height: 30vh;
+}
