@@ -11,8 +11,19 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 2vh 2vw; /* 패딩을 vh와 vw로 설정 */
+        font-weight: bold;
       }
-      header,
+      header {
+        margin-bottom: 2vh; /* 여백을 vh로 설정 */
+        margin-left: 7vw;
+        font-weight: bold;
+        color: orange;
+      }
+
+      header h1 {
+        margin-top: 1vh;
+        color: black;
+      }
       footer {
         text-align: center;
         margin-bottom: 2vh; /* 여백을 vh로 설정 */
@@ -99,8 +110,11 @@
   </head>
   <body>
     <header>
-      <h1>Do You Need Help</h1>
-      <p>궁금한 사항은 언제든 문의주세요</p>
+      Do You Need Help
+      <h1>
+        궁금한 사항은 언제든<br />
+        문의주세요
+      </h1>
     </header>
 
     <main>
@@ -108,28 +122,28 @@
         <form action="submit_inquiry.php" method="post">
           <div class="flex-container">
             <div>
-              <label for="store-name">매장이름:</label>
+              <label for="store-name">매장이름 *</label>
               <input
                 type="text"
                 id="store-name"
                 name="store-name"
-                value="패스커피 강남점"
+                placeholder="패스커피 강남점"
                 required
               />
             </div>
             <div>
-              <label for="store-location">매장위치:</label>
+              <label for="store-location">매장위치 *</label>
               <input
                 type="text"
                 id="store-location"
                 name="store-location"
-                value="서울특별시 강남구 영동대로 85길, 패스커피"
+                placeholder="서울특별시 강남구 영동대로 85길, 패스커피"
                 required
               />
             </div>
           </div>
 
-          <label for="business-type">업종:</label>
+          <label for="business-type">업종 *</label>
           <select id="business-type" name="business-type" required>
             <option value="">선택</option>
             <option value="커피전문점(개인)">커피전문점(개인)</option>
@@ -146,7 +160,7 @@
 
           <div class="flex-container">
             <div>
-              <label for="contact">연락처:</label>
+              <label for="contact">연락처 *</label>
               <input
                 type="tel"
                 id="contact"
@@ -156,7 +170,7 @@
               />
             </div>
             <div>
-              <label for="email">이메일:</label>
+              <label for="email">이메일 *</label>
               <div class="email-container">
                 <input
                   type="email"
@@ -198,11 +212,11 @@
             <option value="기타">기타</option>
           </select>
 
-          <label for="message">문의내용:</label>
+          <label for="message">문의내용 *</label>
           <textarea
             id="message"
             name="message"
-            rows="5"
+            rows="15"
             placeholder="문의 내용을 입력해주세요"
             required
           ></textarea>

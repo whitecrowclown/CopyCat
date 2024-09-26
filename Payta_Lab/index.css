@@ -3,46 +3,65 @@
   gap: 0%;
 }
 header {
-  width: 100vw;
+  width: 98vw;
   height: 10vh;
+  display: flex;
+  margin-top: 2vh;
 }
 
+header #logo {
+  width: 10vw;
+  text-align: left;
+  margin-left: 1vw;
+}
+
+header #menu {
+  width: 80vw;
+  text-align: center;
+}
+
+header #download {
+  width: 10vw;
+  text-align: right;
+}
 #Company_info1 {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
 }
 
 #Company_info2 {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
 }
 
 #Company_info3 {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
 }
 
 #Company_info4 {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
 }
 
 #Company_info5 {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
 }
 
 #Company_info6 {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
 }
 
 #Company_info7 {
-  width: 100vw;
+  width: 98vw;
   height: 70vh;
 }
 
 footer {
-  width: 100vw;
+  width: 98vw;
   height: 30vh;
+  font-size: 1.5vh;
+  margin-left: 10vw;
 }
