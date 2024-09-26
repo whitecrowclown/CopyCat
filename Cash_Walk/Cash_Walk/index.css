@@ -65,6 +65,10 @@ header #menu_wrapper {
   text-align: center;
 }
 
+cashdeal_CI1 {
+  height: 70vh;
+}
+
 #flex_box {
   display: flex;
 }
