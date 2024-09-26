@@ -23,7 +23,7 @@ header #Company_logo {
 }
 
 #menu_wrapper {
-  width: 90vw;
+  width: 80vw;
   padding-top: 3vh;
   display: flex;
   text-align: right;
@@ -131,6 +131,45 @@ header #menu_wrapper {
   height: 100vh;
 }
 
+#index_CI3 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 10vh;
+  background-color: gray;
+}
+
+#index_CI3 #flex_box {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 10vh;
+  padding-left: 31vw;
+}
+
+#index_CI3 #flex_box #Google_Play {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  font-size: 120%;
+  width: 17vw;
+  border: 0;
+  border-radius: 25px;
+}
+
+#index_CI3 #flex_box #App_Store {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  font-size: 120%;
+  width: 17vw;
+  border: 0;
+  border-radius: 25px;
+  margin-left: 10%;
+}
+
 #Company_info4 {
   width: 100%;
   height: 100vh;
@@ -160,4 +199,29 @@ footer {
 
 #footer_contents {
   padding-left: 30vw;
+}
+
+#yellow_btn {
+  border: 0;
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  background-color: orange;
+  border-radius: 10px;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+#gray_btn {
+  border: 0;
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  font-size: 110%;
+  font-weight: bold;
 }
