@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS와 JavaScript로 미니 다이얼로그 만들기</title>
+    <style>
+      /* 다이얼로그 스타일 */
+      .dialog-overlay {
+        display: none; /* 기본적으로 숨김 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dialog-box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS와 JavaScript로 미니 다이얼로그 만들기</h2>
+
+    <!-- 다이얼로그 구조 -->
+    <div class="dialog-overlay" id="dialogOverlay">
+      <div class="dialog-box">
+        <p>여기는 미니 다이얼로그입니다.</p>
+        <button id="closeBtn">닫기</button>
+      </div>
+    </div>
+
+    <!-- 다이얼로그 열기 버튼 -->
+    <button id="openBtn">다이얼로그 열기</button>
+
+    <script>
+      // 요소 참조
+      const dialogOverlay = document.getElementById("dialogOverlay");
+      const openBtn = document.getElementById("openBtn");
+      const closeBtn = document.getElementById("closeBtn");
+
+      // 다이얼로그 열기
+      openBtn.addEventListener("click", () => {
+        dialogOverlay.style.display = "flex"; // 다이얼로그 보이기
+      });
+
+      // 다이얼로그 닫기
+      closeBtn.addEventListener("click", () => {
+        dialogOverlay.style.display = "none"; // 다이얼로그 숨기기
+      });
+    </script>
+  </body>
+</html>
