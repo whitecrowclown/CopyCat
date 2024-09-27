@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Animations Collection</title>
+    <style>
+      /* 공통 div 스타일 */
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 100px;
+        font-size: 14px;
+        color: white;
+      }
+
+      /* 아래에서 위로 움직이는 div */
+      .moving-div {
+        background-color: blue;
+        position: relative;
+        animation: moveUp 3s infinite;
+      }
+      @keyframes moveUp {
+        0% {
+          top: 100px;
+        }
+        100% {
+          top: 0px;
+        }
+      }
+
+      /* 서서히 사라지는 div */
+      .fading-div {
+        background-color: red;
+        animation: fadeOut 3s infinite;
+      }
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      /* 서서히 나타나는 div */
+      .appearing-div {
+        background-color: green;
+        opacity: 0;
+        animation: appear 3s infinite;
+      }
+      @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      /* 좌우로 움직이는 div */
+      .sideways-div {
+        background-color: purple;
+        position: relative;
+        animation: moveSideways 3s infinite;
+      }
+      @keyframes moveSideways {
+        0% {
+          left: 0px;
+        }
+        100% {
+          left: 100px;
+        }
+      }
+
+      /* 크기가 커졌다 작아지는 div */
+      .scaling-div {
+        background-color: orange;
+        animation: scaleUp 3s infinite;
+      }
+      @keyframes scaleUp {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.5);
+        }
+      }
+
+      /* 회전하는 div */
+      .rotating-div {
+        background-color: teal;
+        animation: rotate 3s infinite;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* 컬러가 변경되는 div */
+      .color-changing-div {
+        background-color: pink;
+        animation: colorChange 3s infinite;
+      }
+      @keyframes colorChange {
+        0% {
+          background-color: pink;
+        }
+        100% {
+          background-color: yellow;
+        }
+      }
+
+      /* 위아래로 흔들리는 div */
+      .bouncing-div {
+        background-color: gray;
+        position: relative;
+        animation: bounce 3s infinite;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          top: 0;
+        }
+        50% {
+          top: -20px;
+        }
+      }
+
+      /* 사라졌다 나타나는 div (Fade In/Out) */
+      .fadeInOut-div {
+        background-color: brown;
+        animation: fadeInOut 3s infinite;
+      }
+      @keyframes fadeInOut {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      /* 오른쪽으로 슬라이딩하는 div */
+      .slideRight-div {
+        background-color: black;
+        position: relative;
+        animation: slideRight 3s infinite;
+      }
+      @keyframes slideRight {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: 100px;
+        }
+      }
+
+      /* 회전하며 크기 변화하는 div */
+      .rotate-scale-div {
+        background-color: navy;
+        animation: rotateScale 3s infinite;
+      }
+      @keyframes rotateScale {
+        0% {
+          transform: rotate(0deg) scale(1);
+        }
+        100% {
+          transform: rotate(360deg) scale(1.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 아래에서 위로 움직이는 div -->
+    <div class="moving-div">Move Up</div>
+
+    <!-- 서서히 사라지는 div -->
+    <div class="fading-div">Fade Out</div>
+
+    <!-- 서서히 나타나는 div -->
+    <div class="appearing-div">Appear</div>
+
+    <!-- 좌우로 움직이는 div -->
+    <div class="sideways-div">Sideways</div>
+
+    <!-- 크기가 커졌다 작아지는 div -->
+    <div class="scaling-div">Scale</div>
+
+    <!-- 회전하는 div -->
+    <div class="rotating-div">Rotate</div>
+
+    <!-- 컬러가 변경되는 div -->
+    <div class="color-changing-div">Color Change</div>
+
+    <!-- 위아래로 흔들리는 div -->
+    <div class="bouncing-div">Bounce</div>
+
+    <!-- 사라졌다 나타나는 div (Fade In/Out) -->
+    <div class="fadeInOut-div">Fade In/Out</div>
+
+    <!-- 오른쪽으로 슬라이딩하는 div -->
+    <div class="slideRight-div">Slide Right</div>
+
+    <!-- 회전하며 크기 변화하는 div -->
+    <div class="rotate-scale-div">Rotate & Scale</div>
+  </body>
+</html>

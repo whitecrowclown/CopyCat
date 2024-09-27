@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll-triggered YouTube Video</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .video-container {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 360px;
+      }
+      .spacer {
+        height: 100vh;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 공간 추가, 스크롤을 위한 -->
+    <div class="spacer">Scroll down to see the video</div>
+
+    <!-- YouTube Iframe -->
+    <div class="video-container">
+      <div id="player"></div>
+    </div>
+
+    <!-- 추가 공간 -->
+    <div class="spacer">Scroll up to stop the video</div>
+
+    <script>
+      // 1. YouTube IFrame API를 로드
+      var tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+
+      // 2. IFrame API가 로드되면 YouTube 플레이어를 만듭니다
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("player", {
+          height: "360",
+          width: "640",
+          videoId: "kYYS5U_qsMw", // YouTube 비디오 ID
+          playerVars: { start: 1620 }, // 시작 시각 (초 단위)
+          events: {
+            onReady: onPlayerReady,
+          },
+        });
+      }
+
+      // 3. 플레이어가 준비되면 Intersection Observer를 설정
+      function onPlayerReady(event) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.intersectionRatio === 1) {
+                // 화면에 100% 감싸지면 재생
+                player.playVideo();
+              } else {
+                // 화면에 100% 보이지 않으면 정지
+                player.pauseVideo();
+              }
+            });
+          },
+          {
+            threshold: 1, // 요소가 100% 화면에 보일 때만 감지
+          }
+        );
+
+        // 플레이어 관찰 시작
+        observer.observe(document.querySelector(".video-container"));
+      }
+    </script>
+  </body>
+</html>
